@@ -403,5 +403,47 @@
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
   <script src="script.js?v=20261010"></script>
+  
+<script>
+(function () {
+  function openInvitation(event) {
+    var button = document.getElementById('entryVeilBtn');
+    var overlay = document.getElementById('entryVeil');
+
+    if (!button || !overlay) return;
+
+    // Only respond to taps on the opening screen.
+    if (event && !button.contains(event.target) &&
+        !overlay.contains(event.target)) return;
+
+    document.body.classList.remove('is-veiled');
+
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.setAttribute('aria-modal', 'false');
+    overlay.style.setProperty('display', 'none', 'important');
+    overlay.style.setProperty('pointer-events', 'none', 'important');
+
+    // Try to start background music after the user's tap.
+    var music = document.getElementById('bgMusic');
+    if (music) {
+      music.play().catch(function () {
+        // Some browsers may require another user interaction.
+      });
+    }
+  }
+
+  var button = document.getElementById('entryVeilBtn');
+
+  if (button) {
+    button.addEventListener('click', openInvitation);
+    button.addEventListener('touchend', function (event) {
+      // Avoid processing the same tap twice.
+      if (event.cancelable) event.preventDefault();
+      openInvitation(event);
+    }, { passive: false });
+  }
+})();
+</script>
+
 </body>
 </html>
