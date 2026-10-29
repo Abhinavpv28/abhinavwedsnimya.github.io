@@ -445,5 +445,35 @@
 })();
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const beginButton = document.getElementById('entryVeilBtn');
+  const music = document.getElementById('bgMusic');
+  const overlay = document.getElementById('entryVeil');
+
+  if (!beginButton || !music) {
+    console.error('Begin button or background music element missing');
+    return;
+  }
+
+  music.loop = true;
+  music.volume = 0.5;
+
+  beginButton.addEventListener('click', function () {
+    if (overlay) {
+      overlay.style.display = 'none';
+      overlay.setAttribute('aria-hidden', 'true');
+    }
+
+    document.body.classList.remove('is-veiled');
+
+    music.play().then(function () {
+      console.log('Wedding background music started');
+    }).catch(function (error) {
+      console.error('Music playback failed:', error);
+    });
+  });
+});
+</script>
 </body>
 </html>
