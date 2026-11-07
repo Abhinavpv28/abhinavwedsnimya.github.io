@@ -16,7 +16,7 @@
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-script: "Great Vibes", cursive;
   --font-ui: "Josefin Sans", system-ui, sans-serif;
-  --font-malayalam: "Noto Sans Malayalam", "Josefin Sans", sans-serif;
+  --font-malayalam: "Noto Sans  Malayalam", "Josefin Sans", sans-serif;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --space: clamp(1.25rem, 4vw, 2.5rem);
