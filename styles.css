@@ -16,7 +16,7 @@
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-script: "Great Vibes", cursive;
   --font-ui: "Josefin Sans", system-ui, sans-serif;
-  --font-tamil: "Noto Sans Tamil", "Josefin Sans", sans-serif;
+  --font-malayalam: "Noto Sans  Malayalam", "Josefin Sans", sans-serif;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --space: clamp(1.25rem, 4vw, 2.5rem);
@@ -439,12 +439,12 @@ button {
   top: 100svh;
   bottom: 0;
   z-index: 0;
-  opacity: 0.14;
+  opacity: 0.12;
   background-image:
-    url("assets/images/bg-watermark.png"),
+    url("assets/images/bg-watermark.svg"),
     radial-gradient(ellipse at 20% 10%, rgba(196, 160, 106, 0.08), transparent 50%),
     radial-gradient(ellipse at 80% 60%, rgba(36, 107, 102, 0.06), transparent 45%);
-  background-size: min(520px, 70vw) auto, auto, auto;
+  background-size: min(720px, 120vw) auto, auto, auto;
   background-repeat: repeat, no-repeat, no-repeat;
   background-position: center top, center, center;
   mix-blend-mode: multiply;
@@ -556,14 +556,14 @@ button {
   font-weight: 500;
 }
 
-.eyebrow.tamil,
-.tamil {
-  font-family: var(--font-tamil);
+.eyebrow.malayalam,
+.malayalam {
+  font-family: var(--font-malayalam);
   letter-spacing: 0.04em;
   text-transform: none;
 }
 
-.tamil.soft {
+.malayalam.soft {
   color: var(--ink-soft);
   font-size: 0.92rem;
   font-weight: 300;
@@ -1050,7 +1050,7 @@ button {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(47, 38, 34, 0.55);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+[O  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: opacity 0.4s var(--ease);
 }
 
@@ -1589,7 +1589,7 @@ button {
     grid-template-columns: 0.95fr 1.05fr;
   }
 
-  .memory--right .memory__frame {
+[I  .memory--right .memory__frame {
     order: 2;
   }
 
@@ -1715,3 +1715,4 @@ button {
     cursor: auto;
   }
 }
+
