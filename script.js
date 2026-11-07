@@ -1,11 +1,11 @@
 (() => {
-  const MUHURTHAM = new Date("2026-11-29T11:00:00+05:30").getTime();
+  const MUHURTHAM = new Date("2026-12-26T11:30:00+05:30").getTime();
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  const SITE_URL = "https://gomathishankarwedspreetha.github.io/";
-  const VENUE =
-    "Shree Narayana Mahall, 6/3960, Thiru Narayana Nagar, No 1 Tollgate, Bikshandarkoil, Tamil Nadu 621216";
-  const MAPS = "https://maps.app.goo.gl/d4QedArkRfNpaWfg9";
+  const SITE_URL = "https://abhinavwedsnimya.github.io/";
+  const VENUE = "Pandarathu Valappil House, Vilayancode, Kannur, Vilayancode PO, Kerala";
+  const MAPS =
+    "https://www.google.com/maps/search/?api=1&query=Pandarathu%20Valappil%20House%2C%20Vilayancode%2C%20Kannur%2C%20Kerala";
 
   const INTERACTIVE_SELECTOR =
     "a, button, .interactive, .selectable, input, textarea, select, label, summary";
@@ -352,7 +352,7 @@
       ctx.moveTo(0, -p.r * p.tip);
       ctx.bezierCurveTo(hw, -p.r * 0.4, hw * 0.9, p.r * 0.45, 0, p.r * 0.9);
       ctx.bezierCurveTo(-hw * 0.9, p.r * 0.45, -hw, -p.r * 0.4, 0, -p.r * p.tip);
-      ctx.closePath();
+[O      ctx.closePath();
       ctx.fillStyle = p.hue + p.a + ")";
       ctx.fill();
       ctx.restore();
@@ -550,7 +550,7 @@
 
   /* ---------- WhatsApp share ---------- */
   const shareText =
-    "You're invited to the wedding of Gomathi Shankar & Preetha!\n\n- Reception · 28 Nov 2026, 7:00 PM onwards\n- Nichayathartham (Engagement) · 29 Nov 2026, 7:00 AM onwards\n- Muhurtham · 29 Nov 2026, 11:00 AM – 12:00 PM\n\nShree Narayana Mahall, Bikshandarkoil, Trichy - 621216\n" +
+    "You're invited to the wedding reception of Abhinav & Nimya!\n\nReception · December 26, 2026, 7:00 PM onwards\nVenue: Groom's residence, Pandarathu Valappil House, Vilayancode, Kannur, Vilayancode PO, Kerala\n" +
     SITE_URL;
   const waUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
 
@@ -569,7 +569,7 @@
   const baseTitle = document.title;
   const awayTitles = [
     "Psst… you're invited!",
-    "Save the date · Nov 29",
+    "Save the date · Dec 26",
     "G & P are waiting ✨",
     "Don't miss the muhurtham!",
     "Come back — you're invited!",
@@ -602,7 +602,7 @@
     layer.height = window.innerHeight * dpr;
     layer.style.width = "100%";
     layer.style.height = "100%";
-    ctxC.setTransform(dpr, 0, 0, dpr, 0, 0);
+[I    ctxC.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     const colors = ["#f7c5cd", "#f0aab6", "#e88c9b", "#c63a4e", "#b02a3e", "#d44e60", "#e9c5c8"];
     const parts = Array.from({ length: 56 }, () => ({
@@ -654,25 +654,11 @@
   /* ---------- Calendar events (Google Calendar) ---------- */
   const events = {
     reception: {
-      title: "Reception — Gomathi Shankar & Preetha",
-      description: `Wedding reception of Gomathi Shankar & Preetha (7:00 PM onwards).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
+      title: "Wedding Reception — Abhinav & Nimya",
+      description: `Wedding reception of Abhinav & Nimya (7:00 PM onwards).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
       location: VENUE,
-      start: "20261128T190000",
-      end: "20261128T230000",
-    },
-    engagement: {
-      title: "Nichayathartham (Engagement) — Gomathi Shankar & Preetha",
-      description: `Nichayathartham / Engagement of Gomathi Shankar & Preetha (7:00 AM onwards).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
-      location: VENUE,
-      start: "20261129T070000",
-      end: "20261129T103000",
-    },
-    muhurtham: {
-      title: "Muhurtham — Gomathi Shankar & Preetha",
-      description: `Muhurtham of Gomathi Shankar & Preetha (11:00 AM – 12:00 PM).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
-      location: VENUE,
-      start: "20261129T110000",
-      end: "20261129T120000",
+      start: "20261226T190000",
+      end: "20261226T230000",
     },
   };
 
@@ -928,3 +914,4 @@
     applyAudibleState();
   });
 })();
+
