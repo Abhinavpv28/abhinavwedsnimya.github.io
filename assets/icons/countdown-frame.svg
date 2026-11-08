@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <path id="frame" d="M50 3 57 7 65 7 70 13 78 16 81 24 88 29 89 38 95 45 93 53 95 61 89 68 86 77 78 81 73 88 64 89 57 95 50 93 43 95 36 89 27 88 22 81 14 77 11 68 5 61 7 53 5 45 11 38 12 29 19 24 22 16 30 13 35 7 43 7Z"/>
+  </defs>
+  <use href="#frame" fill="#153821" fill-opacity=".9" stroke="#d5aa4e" stroke-width="1.5" stroke-linejoin="round"/>
+  <use href="#frame" transform="translate(5 5) scale(.9)" fill="none" stroke="#efd281" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="m50 0 2 3-2 3-2-3Zm0 94 2 3-2 3-2-3ZM0 50l3-2 3 2-3 2Zm94 0 3-2 3 2-3 2Z" fill="#efd281"/>
+</svg>

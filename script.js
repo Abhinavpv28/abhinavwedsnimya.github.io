@@ -312,20 +312,10 @@
     }
 
     function makePetal() {
-      const blush = [
-        "rgba(247,197,205,",   /* soft blush rose */
-        "rgba(240,170,182,",   /* medium blush */
-        "rgba(232,140,155,",   /* deeper blush */
-      ];
-      const redRose = [
-        "rgba(198,58,78,",     /* classic red rose */
-        "rgba(176,42,62,",     /* deep rose red */
-        "rgba(212,78,96,",     /* bright rose */
-      ];
-      const palette = Math.random() > 0.42 ? blush : redRose;
+      const palette = ["rgba(255,253,242,", "rgba(248,240,218,"];
       return {
         x: Math.random() * w,
-        y: Math.random() * h - h,
+        y: Math.random() * h,
         r: 2.8 + Math.random() * 3.6,
         slim: 0.38 + Math.random() * 0.2,
         vy: 0.35 + Math.random() * 0.7,
@@ -346,13 +336,13 @@
       ctx.save();
       ctx.translate(p.x, p.y);
       ctx.rotate(p.rot);
-      /* Slim rose petal — length retained, width narrowed */
+      /* Tapered jasmine petal. */
       const hw = p.r * p.slim;
       ctx.beginPath();
       ctx.moveTo(0, -p.r * p.tip);
       ctx.bezierCurveTo(hw, -p.r * 0.4, hw * 0.9, p.r * 0.45, 0, p.r * 0.9);
       ctx.bezierCurveTo(-hw * 0.9, p.r * 0.45, -hw, -p.r * 0.4, 0, -p.r * p.tip);
-[O      ctx.closePath();
+      ctx.closePath();
       ctx.fillStyle = p.hue + p.a + ")";
       ctx.fill();
       ctx.restore();
@@ -550,7 +540,7 @@
 
   /* ---------- WhatsApp share ---------- */
   const shareText =
-    "You're invited to the wedding reception of Abhinav & Nimya!\n\nReception · December 26, 2026, 7:00 PM onwards\nVenue: Groom's residence, Pandarathu Valappil House, Vilayancode, Kannur, Vilayancode PO, Kerala\n" +
+    "You're invited to the wedding reception of Abhinav & Nimya!\n\nReception · December 26, 2026, 5:00 PM onwards\nVenue: Groom's residence, Pandarathu Valappil House, Vilayancode, Kannur, Vilayancode PO, Kerala\n" +
     SITE_URL;
   const waUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
 
@@ -565,32 +555,6 @@
     openWhatsApp();
   });
 
-  /* ---------- Tab attention title ---------- */
-  const baseTitle = document.title;
-  const awayTitles = [
-    "Psst… you're invited!",
-    "Save the date · Dec 26",
-    "G & P are waiting ✨",
-    "Don't miss the muhurtham!",
-    "Come back — you're invited!",
-  ];
-  let awayIdx = 0;
-  let awayTimer = null;
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      document.title = awayTitles[awayIdx % awayTitles.length];
-      awayTimer = setInterval(() => {
-        awayIdx += 1;
-        document.title = awayTitles[awayIdx % awayTitles.length];
-      }, 2800);
-    } else {
-      clearInterval(awayTimer);
-      awayTimer = null;
-      document.title = baseTitle;
-    }
-  });
-
   /* ---------- Confetti (petals + gold + teal) ---------- */
   function burstConfetti() {
     if (reduceMotion) return;
@@ -602,7 +566,7 @@
     layer.height = window.innerHeight * dpr;
     layer.style.width = "100%";
     layer.style.height = "100%";
-[I    ctxC.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctxC.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     const colors = ["#f7c5cd", "#f0aab6", "#e88c9b", "#c63a4e", "#b02a3e", "#d44e60", "#e9c5c8"];
     const parts = Array.from({ length: 56 }, () => ({
@@ -655,9 +619,9 @@
   const events = {
     reception: {
       title: "Wedding Reception — Abhinav & Nimya",
-      description: `Wedding reception of Abhinav & Nimya (7:00 PM onwards).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
+      description: `Wedding reception of Abhinav & Nimya (5:00 PM onwards).\nVenue: ${VENUE}\nMaps: ${MAPS}\nInvite: ${SITE_URL}`,
       location: VENUE,
-      start: "20261226T190000",
+      start: "20261226T170000",
       end: "20261226T230000",
     },
   };
@@ -695,7 +659,7 @@
   let musicMuted = false;
   let pendingUnmute = false;
   let gestureArmed = false;
-  let veilOpen = !!entryVeil;
+  let veilOpen = !!entryVeil && getComputedStyle(entryVeil).display !== "none";
 
   function syncMusicIcon() {
     if (!musicBtn) return;
@@ -860,7 +824,7 @@
 
   syncMusicIcon();
 
-  if (entryVeil && entryVeilBtn) {
+  if (entryVeil && entryVeilBtn && veilOpen) {
     entryVeilBtn.addEventListener("click", openEntryVeil);
     entryVeilBtn.addEventListener(
       "keydown",
@@ -914,4 +878,3 @@
     applyAudibleState();
   });
 })();
-

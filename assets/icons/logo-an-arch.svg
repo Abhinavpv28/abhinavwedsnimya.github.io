@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Abhinav and Nimya temple arch logo</title>
+  <g fill="none" stroke="#b88638" stroke-linecap="round">
+    <path d="M105 400V275c0-60 45-74 73-86 0-48 65-62 86-82 20-13 31-38 36-57 5 19 16 44 36 57 21 20 86 34 86 82 28 12 73 26 73 86v125" stroke-width="3"/>
+    <path d="M117 400V277c0-53 45-65 74-79 0-43 62-59 81-78 14-10 23-23 28-35 5 12 14 25 28 35 19 19 81 35 81 78 29 14 74 26 74 79v123M90 420h420M190 490h220" stroke-width="1"/>
+    <path d="M300 165c-24-28-51 5 0 35 51-30 24-63 0-35Z" stroke-width="2"/>
+  </g>
+  <g text-anchor="middle" font-family="Georgia, serif">
+    <text x="300" y="342" font-size="114" fill="#183b25">A &amp; N</text>
+    <text x="300" y="465" font-size="32" fill="#b88638">Abhinav &amp; Nimya</text>
+    <text x="300" y="528" font-size="17" letter-spacing="4" fill="#183b25">TOGETHER FOREVER</text>
+  </g>
+</svg>

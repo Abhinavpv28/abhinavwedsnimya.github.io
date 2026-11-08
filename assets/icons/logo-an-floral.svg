@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Abhinav and Nimya botanical wedding logo</title>
+  <defs>
+    <g id="leaf" fill="none" stroke="#b88638" stroke-width="2">
+      <path d="M0 0q-34-27-26-49Q4-41 0 0ZM0 0q34-27 26-49Q-4-41 0 0Z"/>
+    </g>
+    <g id="branch" fill="none" stroke="#b88638" stroke-width="2">
+      <path d="M185 467Q64 366 132 191"/>
+      <use href="#leaf" transform="translate(161 441) rotate(-55) scale(.7)"/>
+      <use href="#leaf" transform="translate(129 401) rotate(-35) scale(.8)"/>
+      <use href="#leaf" transform="translate(109 350) rotate(-15) scale(.8)"/>
+      <use href="#leaf" transform="translate(106 294) rotate(8) scale(.8)"/>
+      <use href="#leaf" transform="translate(117 239) rotate(20) scale(.7)"/>
+    </g>
+  </defs>
+  <use href="#branch"/>
+  <use href="#branch" transform="translate(600 0) scale(-1 1)"/>
+  <g text-anchor="middle" font-family="Georgia, serif">
+    <text x="300" y="183" font-size="17" letter-spacing="4" fill="#b88638">WITH LOVE</text>
+    <text x="300" y="326" font-size="110" fill="#183b25">A N</text>
+    <text x="300" y="380" font-size="44" font-style="italic" fill="#b88638">&amp;</text>
+    <text x="300" y="436" font-size="27" fill="#183b25">Abhinav &amp; Nimya</text>
+    <text x="300" y="503" font-size="19" letter-spacing="3" fill="#b88638">26 · 12 · 2026</text>
+  </g>
+</svg>

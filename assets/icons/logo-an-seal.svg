@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Abhinav and Nimya gold monogram seal</title>
+  <g fill="none" stroke="#b88638">
+    <circle cx="300" cy="300" r="266" stroke-width="2"/>
+    <circle cx="300" cy="300" r="253" stroke-width="1"/>
+    <path d="M300 18 309 34 300 50 291 34ZM300 550 309 566 300 582 291 566ZM18 300 34 291 50 300 34 309ZM550 300 566 291 582 300 566 309Z" fill="#b88638"/>
+    <path d="M180 370h240M245 143h110" stroke-width="1.5"/>
+  </g>
+  <g text-anchor="middle" font-family="Georgia, serif">
+    <text x="300" y="330" font-size="136" fill="#183b25">A N</text>
+    <text x="300" y="355" font-size="48" font-style="italic" fill="#b88638">&amp;</text>
+    <text x="300" y="426" font-size="27" letter-spacing="2" fill="#183b25">ABHINAV &amp; NIMYA</text>
+    <text x="300" y="465" font-size="19" letter-spacing="4" fill="#b88638">26 · 12 · 2026</text>
+  </g>
+</svg>

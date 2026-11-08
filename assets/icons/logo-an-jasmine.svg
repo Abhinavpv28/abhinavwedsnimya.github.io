@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Abhinav and Nimya: jasmine blossom monogram</title>
+  <defs>
+    <path id="petal" d="M300 252c-54-58-42-144 0-169 42 25 54 111 0 169Z"/>
+    <g id="flower" fill="#f6e7c9" stroke="#b88638" stroke-width="1.8">
+      <use href="#petal"/><use href="#petal" transform="rotate(72 300 270)"/><use href="#petal" transform="rotate(144 300 270)"/><use href="#petal" transform="rotate(216 300 270)"/><use href="#petal" transform="rotate(288 300 270)"/>
+    </g>
+  </defs>
+  <path d="M113 410c-18-123 95-250 224-239 97 8 169 94 150 192" fill="none" stroke="#183b25" stroke-width="2"/>
+  <path d="M105 360c-54-16-66-51-57-75 35 6 61 35 57 75Zm11-70c-31-38-23-74 2-91 25 24 25 58-2 91ZM467 360c54-16 66-51 57-75-35 6-61 35-57 75Z" fill="#183b25"/>
+  <use href="#flower"/>
+  <circle cx="300" cy="270" r="96" fill="#183b25" stroke="#b88638" stroke-width="2"/>
+  <circle cx="300" cy="270" r="86" fill="none" stroke="#d5af63" stroke-width=".7"/>
+  <g text-anchor="middle" font-family="Georgia, serif">
+    <text x="300" y="296" font-size="65" fill="#f6e7c9">A &amp; N</text>
+    <text x="300" y="488" font-size="31" fill="#183b25">Abhinav &amp; Nimya</text>
+    <text x="300" y="528" font-size="15" letter-spacing="4" fill="#986521">26 · 12 · 2026</text>
+  </g>
+  <path d="M190 453h220" stroke="#b88638"/>
+</svg>

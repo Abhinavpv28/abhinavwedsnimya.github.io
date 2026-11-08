@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Abhinav and Nimya: a shared flame wedding monogram</title>
+  <defs><linearGradient id="gold" x2="0" y2="1"><stop stop-color="#e0bd75"/><stop offset="1" stop-color="#8b5b1e"/></linearGradient></defs>
+  <path d="M300 62c-4 39-39 56-39 89a39 39 0 0 0 78 0c0-33-35-50-39-89Z" fill="url(#gold)"/>
+  <path d="M300 123c-2 19-17 29-17 43a17 17 0 0 0 34 0c0-14-15-24-17-43Z" fill="#fff9ed"/>
+  <g fill="none" stroke="#183b25" stroke-width="12" stroke-linejoin="round">
+    <path d="m137 355 76-157 77 157M164 298h98"/>
+    <path d="M321 355V198l136 157V198"/>
+  </g>
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round">
+    <path d="M98 358c50 65 354 65 404 0-71 19-333 19-404 0Z" stroke-width="4"/>
+    <path d="M300 386v49m-67 14c25-19 109-19 134 0Z" stroke-width="4"/>
+    <path d="M109 195c-45 75-47 153-20 210M491 195c45 75 47 153 20 210" stroke-width="1"/>
+  </g>
+  <g text-anchor="middle" font-family="Georgia, serif">
+    <text x="300" y="504" font-size="31" fill="#183b25">Abhinav &amp; Nimya</text>
+    <text x="300" y="544" font-size="13" letter-spacing="4" fill="#986521">A NEW BEGINNING</text>
+  </g>
+</svg>
